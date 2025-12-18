@@ -19,14 +19,14 @@ The following algorithms are implemented and evaluated:
 
 ### 🔹 Uninformed Search
 
-1- Breadth-First Search (BFS)
-2- Depth-First Search (DFS)
-3- Uniform-Cost Search (UCS)
+1- Breadth-First Search (BFS)  
+2- Depth-First Search (DFS)  
+3- Uniform-Cost Search (UCS)  
 4- Iterative Deepening Search (IDS)
 
 ### 🔹 Informed / Heuristic Search
 
-1- A* Search (A*)
+1- A* Search (A*)  
 2- Hill Climbing
 
 ## 🧩 Problem Description
@@ -120,6 +120,6 @@ No external libraries required (standard Python only)
 
 - Hill Climbing does not guarantee an optimal solution.
 
-⭐ Acknowledgment
+## ⭐ Acknowledgment
 
-## This project was developed as part of an Artificial Intelligence course to demonstrate practical implementation of search algorithms and performance evaluation.
+This project was developed as part of an Artificial Intelligence course to demonstrate practical implementation of search algorithms and performance evaluation.
