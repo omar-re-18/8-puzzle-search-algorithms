@@ -1,41 +1,70 @@
-# main.py
-# Test Search Algorithms on the 8-Puzzle problem
-
+import heapq
+from Puzzle.Puzzle import get_successors, is_goal
 from Puzzle.State import State
-
-# Algorithms
-from Algorithms.Hill_Climbing import solve as hill_climbing_solve
-from Algorithms.A_Star import solve as a_star_solve
+from Metrics.metrics import Metrics
+from Heuristics.heuristics import manhattan_distance, misplaced_tiles
 
 
-def test_algorithm(name, solve_func, initial_state):
-    print(f"\nRunning {name}...")
-    result = solve_func(initial_state)
+def solve(initial_state , heuristic = "manhattan"):
 
-    solution = result["solution"]
-    metrics = result["metrics"]
+    """
+    A* Search Algorithm
+    متوافق 100% مع main.py
+    """
 
-    if solution is None:
-        print("No solution found.")
+    # اختيار heuristic
+    if heuristic == "manhattan":
+        h_func = manhattan_distance
     else:
-        print("Result state reached:")
-        print(solution.board)
-        print("Path Cost       :", solution.cost)
-        print("Nodes Expanded  :", metrics.nodes_expanded)
-        print("Time Taken (ms):", round(metrics.time_taken, 2))
+        h_func = misplaced_tiles
 
+    metrics = Metrics()
 
-if __name__ == '__main__':
+    open_list = []
+    closed_set = set()
+    counter = 0
 
-    # Initial state (solvable)
-    initial_state = State(
-        board=[8, 4, 6,
-               2, 0, 1,
-               3, 7, 5]
-    )
+    # حساب f للبداية
+    start_h = h_func(initial_state.board)
+    start_f = initial_state.cost + start_h
 
-    print("===== Hill Climbing Test =====")
-    test_algorithm("Hill Climbing", hill_climbing_solve, initial_state)
+    heapq.heappush(open_list, (start_f, counter, initial_state))
 
-    print("\n===== A* (Manhattan) Test =====")
-    test_algorithm("A*", a_star_solve, initial_state)
+    while open_list:
+        _, _, current_state = heapq.heappop(open_list)
+
+        # Goal Test
+        if is_goal(current_state):
+            metrics.stop()
+            return {
+                "solution": current_state,
+                "metrics": metrics
+            }
+
+        closed_set.add(current_state)
+        metrics.nodes_expanded += 1
+
+        # Expand successors
+        for board in get_successors(current_state):
+            child = State(
+                board=board,
+                parent=current_state,
+                cost=current_state.cost + 1,
+                depth=current_state.depth + 1
+            )
+
+            if child in closed_set:
+                continue
+
+            g = child.cost
+            h = h_func(board)
+            f = g + h
+
+            counter += 1
+            heapq.heappush(open_list, (f, counter, child))
+
+    metrics.stop()
+    return {
+        "solution": None,
+        "metrics": metrics
+    }
