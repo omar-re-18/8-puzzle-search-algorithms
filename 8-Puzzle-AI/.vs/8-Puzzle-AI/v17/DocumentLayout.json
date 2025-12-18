@@ -3,6 +3,26 @@
   "WorkspaceRootPath": "D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3B4BC220-AAB1-41EC-B96F-C7E7D7A80C37}|8-Puzzle-AI.pyproj|D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\Experiments\\Run_All.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{3B4BC220-AAB1-41EC-B96F-C7E7D7A80C37}|8-Puzzle-AI.pyproj|solutionrelative:Experiments\\Run_All.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B4BC220-AAB1-41EC-B96F-C7E7D7A80C37}|8-Puzzle-AI.pyproj|D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\Algorithms\\Hill_Climbing.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{3B4BC220-AAB1-41EC-B96F-C7E7D7A80C37}|8-Puzzle-AI.pyproj|solutionrelative:Algorithms\\Hill_Climbing.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B4BC220-AAB1-41EC-B96F-C7E7D7A80C37}|8-Puzzle-AI.pyproj|D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\Utils\\Heuristics.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{3B4BC220-AAB1-41EC-B96F-C7E7D7A80C37}|8-Puzzle-AI.pyproj|solutionrelative:Utils\\Heuristics.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B4BC220-AAB1-41EC-B96F-C7E7D7A80C37}|8-Puzzle-AI.pyproj|D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\Utils\\Metrics.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{3B4BC220-AAB1-41EC-B96F-C7E7D7A80C37}|8-Puzzle-AI.pyproj|solutionrelative:Utils\\Metrics.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B4BC220-AAB1-41EC-B96F-C7E7D7A80C37}|8-Puzzle-AI.pyproj|D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\main.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{3B4BC220-AAB1-41EC-B96F-C7E7D7A80C37}|8-Puzzle-AI.pyproj|solutionrelative:main.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3B4BC220-AAB1-41EC-B96F-C7E7D7A80C37}|8-Puzzle-AI.pyproj|D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\Algorithms\\BFS.py||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{3B4BC220-AAB1-41EC-B96F-C7E7D7A80C37}|8-Puzzle-AI.pyproj|solutionrelative:Algorithms\\BFS.py||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
@@ -11,12 +31,7 @@
       "RelativeMoniker": "D:0:0:{3B4BC220-AAB1-41EC-B96F-C7E7D7A80C37}|8-Puzzle-AI.pyproj|solutionrelative:Algorithms\\DFS.py||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3B4BC220-AAB1-41EC-B96F-C7E7D7A80C37}|8-Puzzle-AI.pyproj|D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\Experiments\\Run_All.py||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{3B4BC220-AAB1-41EC-B96F-C7E7D7A80C37}|8-Puzzle-AI.pyproj|solutionrelative:Experiments\\Run_All.py||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3B4BC220-AAB1-41EC-B96F-C7E7D7A80C37}|8-Puzzle-AI.pyproj|D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\Puzzle\\Puzzle.py||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{3B4BC220-AAB1-41EC-B96F-C7E7D7A80C37}|8-Puzzle-AI.pyproj|solutionrelative:Puzzle\\Puzzle.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|d:\\Ahmed\\Programming\\New folder\\New folder\\Common7\\IDE\\Extensions\\Microsoft\\Python\\Core\\pylance\\dist\\typeshed-fallback\\stdlib\\builtins.pyi||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3B4BC220-AAB1-41EC-B96F-C7E7D7A80C37}|8-Puzzle-AI.pyproj|D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\Puzzle\\State.py||{8B382828-6202-11D1-8870-0000F87579D2}",
@@ -25,22 +40,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{3B4BC220-AAB1-41EC-B96F-C7E7D7A80C37}|8-Puzzle-AI.pyproj|D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\Algorithms\\A_Star.py||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{3B4BC220-AAB1-41EC-B96F-C7E7D7A80C37}|8-Puzzle-AI.pyproj|solutionrelative:Algorithms\\A_Star.py||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3B4BC220-AAB1-41EC-B96F-C7E7D7A80C37}|8-Puzzle-AI.pyproj|D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\Algorithms\\Hill_Climbing.py||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{3B4BC220-AAB1-41EC-B96F-C7E7D7A80C37}|8-Puzzle-AI.pyproj|solutionrelative:Algorithms\\Hill_Climbing.py||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3B4BC220-AAB1-41EC-B96F-C7E7D7A80C37}|8-Puzzle-AI.pyproj|D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\Algorithms\\UCS.py||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{3B4BC220-AAB1-41EC-B96F-C7E7D7A80C37}|8-Puzzle-AI.pyproj|solutionrelative:Algorithms\\UCS.py||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3B4BC220-AAB1-41EC-B96F-C7E7D7A80C37}|8-Puzzle-AI.pyproj|D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\Algorithms\\IDS.py||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{3B4BC220-AAB1-41EC-B96F-C7E7D7A80C37}|8-Puzzle-AI.pyproj|solutionrelative:Algorithms\\IDS.py||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3B4BC220-AAB1-41EC-B96F-C7E7D7A80C37}|8-Puzzle-AI.pyproj|D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\main.py||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{3B4BC220-AAB1-41EC-B96F-C7E7D7A80C37}|8-Puzzle-AI.pyproj|solutionrelative:main.py||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,7 +49,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,133 +61,125 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "Hill_Climbing.py",
               "DocumentMoniker": "D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\Algorithms\\Hill_Climbing.py",
               "RelativeDocumentMoniker": "Algorithms\\Hill_Climbing.py",
               "ToolTip": "D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\Algorithms\\Hill_Climbing.py",
               "RelativeToolTip": "Algorithms\\Hill_Climbing.py",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABTAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
-              "WhenOpened": "2025-12-18T19:32:16.659Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "A_Star.py",
-              "DocumentMoniker": "D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\Algorithms\\A_Star.py",
-              "RelativeDocumentMoniker": "Algorithms\\A_Star.py",
-              "ToolTip": "D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\Algorithms\\A_Star.py",
-              "RelativeToolTip": "Algorithms\\A_Star.py",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAADoAAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
-              "WhenOpened": "2025-12-18T19:30:01.153Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "UCS.py",
-              "DocumentMoniker": "D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\Algorithms\\UCS.py",
-              "RelativeDocumentMoniker": "Algorithms\\UCS.py",
-              "ToolTip": "D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\Algorithms\\UCS.py",
-              "RelativeToolTip": "Algorithms\\UCS.py",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
-              "WhenOpened": "2025-12-18T19:24:06.922Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "State.py",
-              "DocumentMoniker": "D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\Puzzle\\State.py",
-              "RelativeDocumentMoniker": "Puzzle\\State.py",
-              "ToolTip": "D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\Puzzle\\State.py",
-              "RelativeToolTip": "Puzzle\\State.py",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
-              "WhenOpened": "2025-12-16T18:41:53.038Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Puzzle.py",
-              "DocumentMoniker": "D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\Puzzle\\Puzzle.py",
-              "RelativeDocumentMoniker": "Puzzle\\Puzzle.py",
-              "ToolTip": "D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\Puzzle\\Puzzle.py",
-              "RelativeToolTip": "Puzzle\\Puzzle.py",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAGMAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
-              "WhenOpened": "2025-12-18T18:47:59.467Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BFS.py",
-              "DocumentMoniker": "D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\Algorithms\\BFS.py",
-              "RelativeDocumentMoniker": "Algorithms\\BFS.py",
-              "ToolTip": "D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\Algorithms\\BFS.py*",
-              "RelativeToolTip": "Algorithms\\BFS.py*",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACMAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
-              "WhenOpened": "2025-12-16T18:35:24.469Z",
+              "WhenOpened": "2025-12-18T21:36:59.444Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Run_All.py",
-              "DocumentMoniker": "D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\Experiments\\Run_All.py",
-              "RelativeDocumentMoniker": "Experiments\\Run_All.py",
-              "ToolTip": "D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\Experiments\\Run_All.py",
-              "RelativeToolTip": "Experiments\\Run_All.py",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAPAAAAAAAAAA==",
+              "Title": "Heuristics.py",
+              "DocumentMoniker": "D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\Utils\\Heuristics.py",
+              "RelativeDocumentMoniker": "Utils\\Heuristics.py",
+              "ToolTip": "D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\Utils\\Heuristics.py",
+              "RelativeToolTip": "Utils\\Heuristics.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
-              "WhenOpened": "2025-12-18T18:07:24.92Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-18T21:36:52.325Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "IDS.py",
-              "DocumentMoniker": "D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\Algorithms\\IDS.py",
-              "RelativeDocumentMoniker": "Algorithms\\IDS.py",
-              "ToolTip": "D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\Algorithms\\IDS.py",
-              "RelativeToolTip": "Algorithms\\IDS.py",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD8AAAAcAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "Metrics.py",
+              "DocumentMoniker": "D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\Utils\\Metrics.py",
+              "RelativeDocumentMoniker": "Utils\\Metrics.py",
+              "ToolTip": "D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\Utils\\Metrics.py",
+              "RelativeToolTip": "Utils\\Metrics.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
-              "WhenOpened": "2025-12-18T17:26:21.645Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-18T21:36:50.973Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DFS.py",
-              "DocumentMoniker": "D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\Algorithms\\DFS.py",
-              "RelativeDocumentMoniker": "Algorithms\\DFS.py",
-              "ToolTip": "D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\Algorithms\\DFS.py",
-              "RelativeToolTip": "Algorithms\\DFS.py",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
-              "WhenOpened": "2025-12-18T17:26:19.712Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 4,
               "Title": "main.py",
               "DocumentMoniker": "D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\main.py",
               "RelativeDocumentMoniker": "main.py",
               "ToolTip": "D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\main.py",
               "RelativeToolTip": "main.py",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAABAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
-              "WhenOpened": "2025-12-16T18:26:24.109Z",
+              "WhenOpened": "2025-12-18T21:36:47.976Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BFS.py",
+              "DocumentMoniker": "D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\Algorithms\\BFS.py",
+              "RelativeDocumentMoniker": "Algorithms\\BFS.py",
+              "ToolTip": "D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\Algorithms\\BFS.py",
+              "RelativeToolTip": "Algorithms\\BFS.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-12-18T21:20:29.376Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DFS.py",
+              "DocumentMoniker": "D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\Algorithms\\DFS.py",
+              "RelativeDocumentMoniker": "Algorithms\\DFS.py",
+              "ToolTip": "D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\Algorithms\\DFS.py",
+              "RelativeToolTip": "Algorithms\\DFS.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-12-18T21:20:28.101Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "builtins.pyi",
+              "DocumentMoniker": "D:\\Ahmed\\Programming\\New folder\\New folder\\Common7\\IDE\\Extensions\\Microsoft\\Python\\Core\\pylance\\dist\\typeshed-fallback\\stdlib\\builtins.pyi",
+              "RelativeDocumentMoniker": "..\\..\\..\\Ahmed\\Programming\\New folder\\New folder\\Common7\\IDE\\Extensions\\Microsoft\\Python\\Core\\pylance\\dist\\typeshed-fallback\\stdlib\\builtins.pyi",
+              "ToolTip": "D:\\Ahmed\\Programming\\New folder\\New folder\\Common7\\IDE\\Extensions\\Microsoft\\Python\\Core\\pylance\\dist\\typeshed-fallback\\stdlib\\builtins.pyi",
+              "RelativeToolTip": "..\\..\\..\\Ahmed\\Programming\\New folder\\New folder\\Common7\\IDE\\Extensions\\Microsoft\\Python\\Core\\pylance\\dist\\typeshed-fallback\\stdlib\\builtins.pyi",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-12-18T21:20:16.032Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "State.py",
+              "DocumentMoniker": "D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\Puzzle\\State.py",
+              "RelativeDocumentMoniker": "Puzzle\\State.py",
+              "ToolTip": "D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\Puzzle\\State.py",
+              "RelativeToolTip": "Puzzle\\State.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-12-18T21:19:55.605Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Run_All.py",
+              "DocumentMoniker": "D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\Experiments\\Run_All.py",
+              "RelativeDocumentMoniker": "Experiments\\Run_All.py",
+              "ToolTip": "D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\Experiments\\Run_All.py",
+              "RelativeToolTip": "Experiments\\Run_All.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-12-18T21:19:34.915Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "A_Star.py",
+              "DocumentMoniker": "D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\Algorithms\\A_Star.py",
+              "RelativeDocumentMoniker": "Algorithms\\A_Star.py",
+              "ToolTip": "D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\Algorithms\\A_Star.py",
+              "RelativeToolTip": "Algorithms\\A_Star.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2025-12-18T21:19:28.618Z"
             }
           ]
         }
