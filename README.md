@@ -60,13 +60,14 @@ python experiments/run_all.py
 
 ## 👥 Team Members & Contributions
 
-Member 1: Ahmed Ashraf Elsayed Kamal
+- Member 1: Donya Sameh Fathy Abdelshafy
 
-Member 2: Ahmed Awad Hassan Mohamed
+- Member 2: Ahmed Ashraf Elsayed Kamal
 
-Member 3: Omar Hany Fathy Ali
+- Member 3: Ahmed Awad Hassan Mohamed
 
-Member 4: Donia Sameh Fathi Abdel Shafi
+- Member 4: Omar Hany Fathy Ali
+
 
 ## 📊 Output
 
