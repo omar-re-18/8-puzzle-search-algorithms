@@ -2,60 +2,69 @@ from Puzzle import Puzzle
 from Puzzle import State
 from Utils import Metrics
 
-def depth_limited_search(state, limit, metrics, visited):
-    """
-    A helper function that performs Depth-Limited Search (DLS).
-    It explores nodes up to a specific depth 'limit'.
-    """
-    # Goal Check
+
+def _normalize_initial_state(initial_board_or_state):
+    if isinstance(initial_board_or_state, State.State):
+        board = list(initial_board_or_state.board)
+    else:
+        board = list(initial_board_or_state)
+
+    return State.State(board=board, depth=0, cost=0)
+
+
+def depth_limited_search(state, limit, metrics, visited): 
     if Puzzle.is_goal(state):
         return state
-    
-    # If the depth limit is reached, stop exploring this branch
-    if limit <= 0:
+
+    if limit == 0:
         return None
-    
+
+    visited.add(tuple(state.board))
     metrics.nodes_expanded += 1
-    
-    # Explore neighbors
+
     for next_board in Puzzle.get_successors(state):
+        board_tuple = tuple(next_board)
+        if board_tuple in visited:
+            continue
+
         successor_state = State.State(
-            board=next_board, 
-            parent=state, 
+            board=next_board,
+            parent=state,
             depth=state.depth + 1,
-            cost=state.cost + 1
+            cost=state.cost + 1,
         )
-        
-        # Recursive call with decremented limit
+
         result = depth_limited_search(successor_state, limit - 1, metrics, visited)
-        
-        # If a solution is found in the deeper layers, propagate it up
         if result is not None:
             return result
-            
+
+    visited.remove(tuple(state.board))
     return None
 
-def solve(initial_board):
-    """
-    Solves the 8-Puzzle using Iterative Deepening Search (IDS).
-    IDS repeatedly applies DLS with increasing limits (0, 1, 2, ...).
-    """
+
+def solve(initial_board, max_depth=50, verbose=False):
+    """Iterative Deepening Search (IDS) repeatedly runs depth-limited DFS."""
+
     metrics = Metrics.Metrics()
-    initial_state = State.State(board=initial_board, depth=0, cost=0)
-    
-    # Iteratively increase the depth limit
-    # Max depth set to 50 as 8-puzzle solutions rarely exceed 31 moves
-    for limit in range(50):
-        # In IDS, we usually clear visited for each depth to ensure optimality
-        # but the depth limit itself prevents infinite recursion.
-        result_state = depth_limited_search(initial_state, limit, metrics, set())
-        
-        # If solution found at current limit, return it
+    initial_state = _normalize_initial_state(initial_board)
+
+    for limit in range(max_depth + 1):
+        visited = set()
+        result_state = depth_limited_search(initial_state, limit, metrics, visited)
+
         if result_state is not None:
             metrics.stop()
             solution_path = Puzzle.reconstruct_path(result_state)
+
+            if verbose:
+                print("\n" + "=" * 40)
+                print(f"IDS SOLUTION FOUND! (Depth limit: {limit})")
+                print("=" * 40)
+                for step, board in enumerate(solution_path):
+                    print(f"Step {step}:")
+                    Puzzle.print_puzzle(board)
+
             return {"solution": solution_path, "metrics": metrics}
-            
-    # If the loop finishes without finding a solution
+
     metrics.stop()
     return {"solution": None, "metrics": metrics}

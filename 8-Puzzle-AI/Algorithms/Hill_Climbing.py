@@ -1,71 +1,93 @@
-﻿# hill_climbing.py
-# Hill Climbing Algorithm for the 8-Puzzle problem
+﻿"""Hill Climbing search for the 8-puzzle problem."""
 
-from Puzzle.Puzzle import is_goal, get_successors
+from Puzzle.Puzzle import (
+    get_successors,
+    is_goal,
+    reconstruct_path,
+    print_puzzle,
+)
 from Puzzle.State import State
 from Utils.Heuristics import manhattan_distance
 from Utils.Metrics import Metrics
 
 
-def solve(initial_state):
-    """
-    Hill Climbing Algorithm
+def _normalize_initial_state(initial_board_or_state):
+    """Ensure we always start from a fresh State object (depth/cost reset to 0)."""
 
-    initial_state : State object
-    return        : dictionary يحتوي على الحل (إن وجد) و الـ metrics
-    """
+    if isinstance(initial_board_or_state, State):
+        board = list(initial_board_or_state.board)
+    else:
+        board = list(initial_board_or_state)
 
-    # نبدأ تسجيل الأداء
+    return State(board=board, parent=None, depth=0, cost=0)
+
+
+def solve(initial_board, verbose=True):
+    """Simple hill climbing using the Manhattan heuristic (no sideways moves)."""
+
     metrics = Metrics()
-
-    # نبدأ من الحالة الابتدائية
-    current_state = initial_state
+    current_state = _normalize_initial_state(initial_board)
 
     while True:
-        # بنحسب node expanded
         metrics.nodes_expanded += 1
 
-        # لو وصلنا للهدف
         if is_goal(current_state):
             metrics.stop()
+            solution_path = reconstruct_path(current_state)
+
+            if verbose:
+                print("\n" + "=" * 40)
+                print("HILL CLIMBING REACHED THE GOAL!")
+                print("=" * 40)
+                for step, board in enumerate(solution_path):
+                    print(f"Step {step}:")
+                    print_puzzle(board)
+
             return {
-                "solution": current_state,
-                "metrics": metrics
+                "solution": solution_path,
+                "metrics": metrics,
+                "status": "goal",
             }
 
-        # نطلع كل الجيران (الحالات الممكنة)
+        # تجمع كل الحالات المجاورة اللي نقدر نوصلها بخطوة واحدة
         neighbors = []
-
         for next_board in get_successors(current_state):
-            next_state = State(
+            neighbor = State(
                 board=next_board,
                 parent=current_state,
-                move=None,
                 depth=current_state.depth + 1,
-                cost=current_state.cost + 1
+                cost=current_state.cost + 1,
             )
-            neighbors.append(next_state)
+            neighbors.append(neighbor)
 
-        # نحسب heuristic للحالة الحالية
         current_h = manhattan_distance(current_state.board)
-
-        # نختار أحسن Neighbor (أقل heuristic)
         best_neighbor = None
         best_h = current_h
 
+        # نختار أفضل جار أقل في قيمة الـ heuristic
         for neighbor in neighbors:
-            h = manhattan_distance(neighbor.board)
-            if h < best_h:
-                best_h = h
+            neighbor_h = manhattan_distance(neighbor.board)
+            if neighbor_h < best_h:
+                best_h = neighbor_h
                 best_neighbor = neighbor
 
-        # لو ملقيناش Neighbor أحسن → نقف (Local Optimum)
+        # لو مفيش جار أحسن → وقفنا في Local Optimum
         if best_neighbor is None:
             metrics.stop()
+            plateau_path = reconstruct_path(current_state)
+
+            if verbose:
+                print("\n" + "=" * 40)
+                print("Hill Climbing علق في Local Optimum") 
+                print("=" * 40)
+                print_puzzle(current_state.board)
+
             return {
-                "solution": current_state,   # الحل الحالي (مش optimal غالبًا)
-                "metrics": metrics
+                "solution": None,
+                "best_path": plateau_path,
+                "metrics": metrics,
+                "status": "plateau",
+                "message": "Reached local optimum (no better neighbor).",
             }
 
-        # نتحرك لأحسن Neighbor
         current_state = best_neighbor

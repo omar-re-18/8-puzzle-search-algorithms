@@ -2,81 +2,61 @@ import collections
 from Puzzle import Puzzle
 from Puzzle import State
 from Utils import Metrics
-# Note: You should ensure State.py, Puzzle.py, and Metrics.py are in the same directory, 
-# or properly imported via the Python path.
 
 
+def _normalize_initial_state(initial_board_or_state): 
+    """Always return a fresh State instance starting from depth/cost = 0."""
+    if isinstance(initial_board_or_state, State.State):
+        board = list(initial_board_or_state.board)
+    else:
+        board = list(initial_board_or_state)
 
-def solve(initial_board):
-    """
-    Solves the 8-Puzzle using Breadth-First Search (BFS).
+    return State.State(board=board, depth=0, cost=0)
 
-    Args:
-        initial_board (list): The starting 8-puzzle configuration (list of 9 integers).
 
-    Returns:
-        dict: A dictionary containing the solution path (list of states) and performance metrics.
-    """
+def solve(initial_board, verbose=True):
+    """Breadth-First Search (BFS) solver for the 8-puzzle."""
 
-    # Initialize Metrics tracking
     metrics = Metrics.Metrics()
-    
-    # 1. Initialization
-    initial_state = State.State(board=initial_board, depth=0, cost=0)
+    initial_state = _normalize_initial_state(initial_board)
 
-    # Queue (Frontier): Stores State objects to be explored. BFS uses FIFO.
     queue = collections.deque([initial_state])
-    
-    # Visited Set: Stores State objects (or just the board tuple hash) to prevent cycles.
-    # Using the State object itself works because __hash__ and __eq__ are defined.
-    visited = {initial_state} 
+    visited = {tuple(initial_state.board)}
 
-    # 2. Loop
     while queue:
-        # Dequeue the state with the highest priority (lowest depth/cost)
-        current_state = queue.popleft()
+        current_state = queue.popleft() # Dequeue the front state
         metrics.nodes_expanded += 1
 
-        # 2.1. Goal Check
         if Puzzle.is_goal(current_state):
             metrics.stop()
-            # Reconstruct the path from the goal state back to the initial state
             solution_path = Puzzle.reconstruct_path(current_state)
 
-            # --- Printing Every Step ---
-            print("\n" + "="*40)
-            print(f"✨ SOLUTION FOUND! (Total moves: {len(solution_path) - 1})")
-            print("="*40)
-            
-            # Loop through the solution path (list of boards) and print each one
-            for i, board in enumerate(solution_path):
-                print(f"➡️ Step {i}:")
-                Puzzle.print_puzzle(board)
-            # --- End Printing ---
+            if verbose:
+                print("\n" + "=" * 40)
+                print(f"BFS SOLUTION FOUND! (Total moves: {len(solution_path) - 1})")
+                print("=" * 40)
+                for i, board in enumerate(solution_path):
+                    print(f"Step {i}:")
+                    Puzzle.print_puzzle(board)
 
             return {"solution": solution_path, "metrics": metrics}
 
-        # 2.2. Generate and Explore Neighbors
-        # successors returns a list of board lists (e.g., [[1, 2, 3, ...]])
         for next_board in Puzzle.get_successors(current_state):
-            
-            # Create a new State object for the successor
-            # Cost is the current cost + 1 (since all moves cost 1)
-            # Depth increases by 1
+            board_tuple = tuple(next_board) # Convert board(list) to tuple for set operations because lists are unhashable and cannot be added to a set
+            if board_tuple in visited:
+                continue
+
             successor_state = State.State(
-                board=next_board, 
-                parent=current_state, 
-                move=None, # The move info can be deduced by comparing current_state and next_board
+                board=next_board, # Create new State for the successor
+                parent=current_state, # Link back to current state
+                move=None,
                 depth=current_state.depth + 1,
-                cost=current_state.cost + 1
+                cost=current_state.cost + 1,
             )
 
-            # Check if this new state has been visited
-            if successor_state not in visited:
-                visited.add(successor_state)
-                queue.append(successor_state)
-                
-    # If the queue empties and the goal is not reached (e.g., unsolvable state)
+            visited.add(board_tuple)
+            queue.append(successor_state)
+
     metrics.stop()
     return {"solution": None, "metrics": metrics}
 

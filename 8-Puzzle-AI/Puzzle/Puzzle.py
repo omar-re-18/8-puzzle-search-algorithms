@@ -4,6 +4,25 @@
 GOAL_STATE = [1, 2, 3, 4, 5, 6, 7, 8, 0]   # 0 يمثل المكان الفاضي
 GRID_SIZE = 3
 
+
+def is_solvable(board_or_state):
+    """يتحقق من كون لوحة 8-Puzzle قابلة للحل باستخدام عدد الانقلابات."""
+
+    if hasattr(board_or_state, "board"):
+        tiles = list(board_or_state.board)
+    else:
+        tiles = list(board_or_state)
+
+    flat = [tile for tile in tiles if tile != 0]
+    inversions = 0
+
+    for i in range(len(flat)):
+        for j in range(i + 1, len(flat)):
+            if flat[i] > flat[j]:
+                inversions += 1
+
+    return inversions % 2 == 0
+
 def is_goal(state):
     """
     تتحقق هل الحالة الحالية هي حالة الهدف ولا لا
