@@ -1,23 +1,38 @@
-﻿# 8-Puzzle AI Project
+﻿# 🧩 8-Puzzle AI Project
 
-## 📌 Description
-This project solves the classic **8-Puzzle problem** using different search algorithms.
-The main goal is to compare the performance of **uninformed** and **informed** search strategies
-based on execution time and number of expanded nodes.
+## 📌 Overview
 
----
+This project addresses the classic 8-Puzzle problem, a well-known problem in Artificial Intelligence, by applying and comparing multiple search algorithms.
 
-## 🧠 Algorithms Implemented
-The following search algorithms are implemented and evaluated:
+The main objective is to analyze and compare uninformed and informed search strategies based on:
 
-- Breadth-First Search (BFS)
-- Depth-First Search (DFS)
-- Uniform-Cost Search (UCS)
-- Iterative Deepening Search (IDS)
-- A* Search
-- Hill Climbing
+- Execution time
+- Number of expanded nodes
+- Solution optimality
+- Path cost
 
----
+The project is implemented in Python as part of an AI academic course.
+
+## 🧠 Implemented Search Algorithms
+
+The following algorithms are implemented and evaluated:
+
+### 🔹 Uninformed Search
+
+1- Breadth-First Search (BFS)
+2- Depth-First Search (DFS)
+3- Uniform-Cost Search (UCS)
+4- Iterative Deepening Search (IDS)
+
+### 🔹 Informed / Heuristic Search
+
+1- A* Search (A*)
+2- Hill Climbing
+
+## 🧩 Problem Description
+
+The 8-Puzzle consists of a 3×3 grid containing numbers from 1 to 8 and one empty tile.
+The goal is to reach a predefined goal state by sliding tiles into the empty position using the minimum number of moves (when applicable).
 
 ## 📂 Project Structure
 
@@ -41,47 +56,70 @@ The following search algorithms are implemented and evaluated:
 │ ├── heuristics.py
 │ └── metrics.py
 │
-├── experiments/ # Scripts to run and compare algorithms
+├── experiments/ # Scripts for running comparisons
 │ └── run_all.py
 │
-├── report/ # Project report and charts
+├── report/ # Final report and analysis
 │ └── Report File
 │
 ├── main.py # Project entry point
-├── README.md
-
+└── README.md
 ```
 
-## Run the project:
-python main.py
+## ▶️ How to Run the Project
 
-## To run all algorithms and compare their performance:
-python experiments/run_all.py
+### Run a single algorithm
 
-## 👥 Team Members & Contributions
+- python main.py
 
-- Member 1: Donya Sameh Fathy Abdelshafy
+### Run all algorithms and compare their performance
 
-- Member 2: Ahmed Ashraf Elsayed Kamal
+- python experiments/run_all.py
 
-- Member 3: Ahmed Awad Hassan Mohamed
+## 📊 Evaluation Metrics
 
-- Member 4: Omar Hany Fathy Ali
+For each algorithm, the following metrics are collected and analyzed:
 
-
-## 📊 Output
-
-For each algorithm, the following metrics are collected:
-
-- Time Complexity
-- Space Complexity
-- Solution Optimality
+- Execution Time
+- Number of Expanded Nodes
 - Path Cost
+- Solution Depth
+- Space Complexity
+- Optimality (Yes / No)
 
-These results are used for comparison and analysis in the final report.
+These metrics are used to produce a detailed comparison in the final report.
+
+## 🧪 Heuristics Used (A\*)
+
+- Misplaced Tiles Heuristic
+- Manhattan Distance Heuristic
+
+Both heuristics are admissible, ensuring optimal solutions for A\*.
 
 ## 📦 Requirements
 
 - Python 3.x
 
----
+No external libraries required (standard Python only)
+
+## 👥 Team Members
+
+- Donya Sameh Fathy Abdelshafy
+
+- Ahmed Ashraf Elsayed Kamal
+
+- Ahmed Awad Hassan Mohamed
+
+- Omar Hany Fathy Ali
+
+## 📄 Notes
+
+- The project is designed for educational and experimental purposes.
+
+- Results may vary depending on the initial puzzle configuration.
+
+- Hill Climbing does not guarantee an optimal solution.
+
+⭐ Acknowledgment
+
+## This project was developed as part of an Artificial Intelligence course to demonstrate practical implementation of search algorithms and performance evaluation.
