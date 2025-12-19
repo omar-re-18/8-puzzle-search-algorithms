@@ -2,16 +2,6 @@ from Puzzle import Puzzle
 from Puzzle import State
 from Utils import Metrics
 
-
-def _normalize_initial_state(initial_board_or_state):
-    if isinstance(initial_board_or_state, State.State):
-        board = list(initial_board_or_state.board)
-    else:
-        board = list(initial_board_or_state)
-
-    return State.State(board=board, depth=0, cost=0)
-
-
 def depth_limited_search(state, limit, metrics, visited): 
     if Puzzle.is_goal(state):
         return state
@@ -46,7 +36,7 @@ def solve(initial_board, max_depth=50, verbose=False):
     """Iterative Deepening Search (IDS) repeatedly runs depth-limited DFS."""
 
     metrics = Metrics.Metrics()
-    initial_state = _normalize_initial_state(initial_board)
+    initial_state = Puzzle._normalize_initial_state(initial_board)
 
     for limit in range(max_depth + 1):
         visited = set()
@@ -68,3 +58,4 @@ def solve(initial_board, max_depth=50, verbose=False):
 
     metrics.stop()
     return {"solution": None, "metrics": metrics}
+
