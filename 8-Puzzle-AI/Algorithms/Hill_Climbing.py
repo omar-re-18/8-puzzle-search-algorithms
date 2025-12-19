@@ -1,39 +1,22 @@
 ﻿"""Hill Climbing search for the 8-puzzle problem."""
 
-from Puzzle.Puzzle import (
-    get_successors,
-    is_goal,
-    reconstruct_path,
-    print_puzzle,
-)
+from Puzzle import Puzzle
 from Puzzle.State import State
 from Utils.Heuristics import manhattan_distance
 from Utils.Metrics import Metrics
-
-
-def _normalize_initial_state(initial_board_or_state):
-    """Ensure we always start from a fresh State object (depth/cost reset to 0)."""
-
-    if isinstance(initial_board_or_state, State):
-        board = list(initial_board_or_state.board)
-    else:
-        board = list(initial_board_or_state)
-
-    return State(board=board, parent=None, depth=0, cost=0)
-
 
 def solve(initial_board, verbose=True):
     """Simple hill climbing using the Manhattan heuristic (no sideways moves)."""
 
     metrics = Metrics()
-    current_state = _normalize_initial_state(initial_board)
+    current_state = Puzzle._normalize_initial_state(initial_board)
 
     while True:
         metrics.nodes_expanded += 1
 
-        if is_goal(current_state):
+        if Puzzle.is_goal(current_state):
             metrics.stop()
-            solution_path = reconstruct_path(current_state)
+            solution_path = Puzzle.reconstruct_path(current_state)
 
             if verbose:
                 print("\n" + "=" * 40)
@@ -41,7 +24,7 @@ def solve(initial_board, verbose=True):
                 print("=" * 40)
                 for step, board in enumerate(solution_path):
                     print(f"Step {step}:")
-                    print_puzzle(board)
+                    Puzzle.print_puzzle(board)
 
             return {
                 "solution": solution_path,
@@ -51,7 +34,7 @@ def solve(initial_board, verbose=True):
 
         # تجمع كل الحالات المجاورة اللي نقدر نوصلها بخطوة واحدة
         neighbors = []
-        for next_board in get_successors(current_state):
+        for next_board in Puzzle.get_successors(current_state):
             neighbor = State(
                 board=next_board,
                 parent=current_state,
@@ -74,13 +57,13 @@ def solve(initial_board, verbose=True):
         # لو مفيش جار أحسن → وقفنا في Local Optimum
         if best_neighbor is None:
             metrics.stop()
-            plateau_path = reconstruct_path(current_state)
+            plateau_path = Puzzle.reconstruct_path(current_state)
 
             if verbose:
                 print("\n" + "=" * 40)
                 print("Hill Climbing علق في Local Optimum") 
                 print("=" * 40)
-                print_puzzle(current_state.board)
+                Puzzle.print_puzzle(current_state.board)
 
             return {
                 "solution": None,
