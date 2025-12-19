@@ -1,9 +1,17 @@
 # هذا الملف يحتوي على منطق لعبة 8- Puzzle فقط
-
+from Puzzle import State
 # الحالة النهائية اللي كل الخوارزميات بتحاول توصل لها
 GOAL_STATE = [1, 2, 3, 4, 5, 6, 7, 8, 0]   # 0 يمثل المكان الفاضي
 GRID_SIZE = 3
 
+def _normalize_initial_state(initial_board_or_state): 
+    """Always return a fresh State instance starting from depth/cost = 0."""
+    if isinstance(initial_board_or_state, State.State):
+        board = list(initial_board_or_state.board)
+    else:
+        board = list(initial_board_or_state)
+
+    return State.State(board=board, depth=0, cost=0)
 
 def is_solvable(board_or_state):
     """يتحقق من كون لوحة 8-Puzzle قابلة للحل باستخدام عدد الانقلابات."""
