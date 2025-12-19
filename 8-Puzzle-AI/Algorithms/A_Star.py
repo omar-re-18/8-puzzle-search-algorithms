@@ -1,18 +1,8 @@
 import heapq
-from Puzzle.Puzzle import get_successors, is_goal, reconstruct_path, print_puzzle
+from Puzzle import Puzzle
 from Puzzle.State import State
 from Utils.Metrics import Metrics
 from Utils.Heuristics import manhattan_distance, misplaced_tiles
-
-
-def _normalize_initial_state(initial_board_or_state):
-    if isinstance(initial_board_or_state, State):
-        board = list(initial_board_or_state.board)
-    else:
-        board = list(initial_board_or_state)
-
-    return State(board=board, depth=0, cost=0)
-
 
 def solve(initial_board, heuristic="manhattan", verbose=False):
     """A* search with selectable heuristic (Manhattan or Misplaced Tiles)."""
@@ -20,7 +10,7 @@ def solve(initial_board, heuristic="manhattan", verbose=False):
     h_func = manhattan_distance if heuristic == "manhattan" else misplaced_tiles
 
     metrics = Metrics()
-    start_state = _normalize_initial_state(initial_board)
+    start_state =Puzzle._normalize_initial_state(initial_board)
 
     open_list = []
     best_cost = {tuple(start_state.board): 0}
@@ -38,9 +28,9 @@ def solve(initial_board, heuristic="manhattan", verbose=False):
         if current_state.cost > best_cost.get(current_board, float("inf")):
             continue
 
-        if is_goal(current_state):
+        if Puzzle.is_goal(current_state):
             metrics.stop()
-            solution_path = reconstruct_path(current_state)
+            solution_path = Puzzle.reconstruct_path(current_state)
 
             if verbose:
                 print("\n" + "=" * 40)
@@ -48,11 +38,11 @@ def solve(initial_board, heuristic="manhattan", verbose=False):
                 print("=" * 40)
                 for step, board in enumerate(solution_path):
                     print(f"Step {step}:")
-                    print_puzzle(board)
+                    Puzzle.print_puzzle(board)
 
             return {"solution": solution_path, "metrics": metrics}
 
-        for board in get_successors(current_state):
+        for board in Puzzle.get_successors(current_state):
             g_cost = current_state.cost + 1
             board_tuple = tuple(board)
 
