@@ -100,16 +100,20 @@ def _print_report_section(board_name, board, rows):
     for row in rows:
         if row["board_type"] != board_name:
             continue
+        time_ms = row["time_ms"]
+        if time_ms is not None and time_ms < 0.01:
+            time_ms = 0.01
+
         line = "".join(
-            [
-                fmt(row["algorithm"], 18),
-                fmt(row["status"], 14),
-                fmt(row["path_cost"], 15),
-                fmt(row["nodes"], 12),
-                fmt(f"{row['time_ms']:.2f}" if row["time_ms"] else None, 12),
-                fmt(row.get("note"), 20),
-            ]
-        )
+        [
+            fmt(row["algorithm"], 18),
+            fmt(row["status"], 14),
+            fmt(row["path_cost"], 15),
+            fmt(row["nodes"], 12),
+            fmt(f"{time_ms:.2f}" if time_ms is not None else None, 12),
+            fmt(row.get("note"), 20),
+        ]
+)
         print(line)
 
 

@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3B4BC220-AAB1-41EC-B96F-C7E7D7A80C37}|8-Puzzle-AI.pyproj|D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\Utils\\Metrics.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{3B4BC220-AAB1-41EC-B96F-C7E7D7A80C37}|8-Puzzle-AI.pyproj|solutionrelative:Utils\\Metrics.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B4BC220-AAB1-41EC-B96F-C7E7D7A80C37}|8-Puzzle-AI.pyproj|D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\Experiments\\Run_All.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{3B4BC220-AAB1-41EC-B96F-C7E7D7A80C37}|8-Puzzle-AI.pyproj|solutionrelative:Experiments\\Run_All.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3B4BC220-AAB1-41EC-B96F-C7E7D7A80C37}|8-Puzzle-AI.pyproj|D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\Algorithms\\DFS.py||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{3B4BC220-AAB1-41EC-B96F-C7E7D7A80C37}|8-Puzzle-AI.pyproj|solutionrelative:Algorithms\\DFS.py||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
@@ -11,20 +19,12 @@
       "RelativeMoniker": "D:0:0:{3B4BC220-AAB1-41EC-B96F-C7E7D7A80C37}|8-Puzzle-AI.pyproj|solutionrelative:Algorithms\\BFS.py||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3B4BC220-AAB1-41EC-B96F-C7E7D7A80C37}|8-Puzzle-AI.pyproj|D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\Experiments\\Run_All.py||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{3B4BC220-AAB1-41EC-B96F-C7E7D7A80C37}|8-Puzzle-AI.pyproj|solutionrelative:Experiments\\Run_All.py||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3B4BC220-AAB1-41EC-B96F-C7E7D7A80C37}|8-Puzzle-AI.pyproj|D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\Algorithms\\Hill_Climbing.py||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{3B4BC220-AAB1-41EC-B96F-C7E7D7A80C37}|8-Puzzle-AI.pyproj|solutionrelative:Algorithms\\Hill_Climbing.py||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3B4BC220-AAB1-41EC-B96F-C7E7D7A80C37}|8-Puzzle-AI.pyproj|D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\Utils\\Heuristics.py||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{3B4BC220-AAB1-41EC-B96F-C7E7D7A80C37}|8-Puzzle-AI.pyproj|solutionrelative:Utils\\Heuristics.py||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3B4BC220-AAB1-41EC-B96F-C7E7D7A80C37}|8-Puzzle-AI.pyproj|D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\Utils\\Metrics.py||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{3B4BC220-AAB1-41EC-B96F-C7E7D7A80C37}|8-Puzzle-AI.pyproj|solutionrelative:Utils\\Metrics.py||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3B4BC220-AAB1-41EC-B96F-C7E7D7A80C37}|8-Puzzle-AI.pyproj|D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\main.py||{8B382828-6202-11D1-8870-0000F87579D2}",
@@ -49,7 +49,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -61,7 +61,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Hill_Climbing.py",
               "DocumentMoniker": "D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\Algorithms\\Hill_Climbing.py",
               "RelativeDocumentMoniker": "Algorithms\\Hill_Climbing.py",
@@ -74,7 +74,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Heuristics.py",
               "DocumentMoniker": "D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\Utils\\Heuristics.py",
               "RelativeDocumentMoniker": "Utils\\Heuristics.py",
@@ -86,15 +86,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "Metrics.py",
               "DocumentMoniker": "D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\Utils\\Metrics.py",
               "RelativeDocumentMoniker": "Utils\\Metrics.py",
-              "ToolTip": "D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\Utils\\Metrics.py",
-              "RelativeToolTip": "Utils\\Metrics.py",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ToolTip": "D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\Utils\\Metrics.py*",
+              "RelativeToolTip": "Utils\\Metrics.py*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
-              "WhenOpened": "2025-12-18T21:36:50.973Z"
+              "WhenOpened": "2025-12-18T21:36:50.973Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -110,12 +111,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "BFS.py",
               "DocumentMoniker": "D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\Algorithms\\BFS.py",
               "RelativeDocumentMoniker": "Algorithms\\BFS.py",
-              "ToolTip": "D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\Algorithms\\BFS.py*",
-              "RelativeToolTip": "Algorithms\\BFS.py*",
+              "ToolTip": "D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\Algorithms\\BFS.py",
+              "RelativeToolTip": "Algorithms\\BFS.py",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
               "WhenOpened": "2025-12-18T21:20:29.376Z",
@@ -123,7 +124,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "DFS.py",
               "DocumentMoniker": "D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\Algorithms\\DFS.py",
               "RelativeDocumentMoniker": "Algorithms\\DFS.py",
@@ -160,13 +161,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Run_All.py",
               "DocumentMoniker": "D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\Experiments\\Run_All.py",
               "RelativeDocumentMoniker": "Experiments\\Run_All.py",
               "ToolTip": "D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\Experiments\\Run_All.py",
               "RelativeToolTip": "Experiments\\Run_All.py",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
               "WhenOpened": "2025-12-18T21:19:34.915Z",
               "EditorCaption": ""

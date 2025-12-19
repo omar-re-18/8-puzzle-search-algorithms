@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3B4BC220-AAB1-41EC-B96F-C7E7D7A80C37}|8-Puzzle-AI.pyproj|D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\Utils\\Metrics.py||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{3B4BC220-AAB1-41EC-B96F-C7E7D7A80C37}|8-Puzzle-AI.pyproj|solutionrelative:Utils\\Metrics.py||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3B4BC220-AAB1-41EC-B96F-C7E7D7A80C37}|8-Puzzle-AI.pyproj|D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\Experiments\\Run_All.py||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{3B4BC220-AAB1-41EC-B96F-C7E7D7A80C37}|8-Puzzle-AI.pyproj|solutionrelative:Experiments\\Run_All.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B4BC220-AAB1-41EC-B96F-C7E7D7A80C37}|8-Puzzle-AI.pyproj|D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\Utils\\Metrics.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{3B4BC220-AAB1-41EC-B96F-C7E7D7A80C37}|8-Puzzle-AI.pyproj|solutionrelative:Utils\\Metrics.py||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3B4BC220-AAB1-41EC-B96F-C7E7D7A80C37}|8-Puzzle-AI.pyproj|D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\Algorithms\\DFS.py||{8B382828-6202-11D1-8870-0000F87579D2}",
@@ -49,7 +49,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -86,12 +86,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Metrics.py",
               "DocumentMoniker": "D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\Utils\\Metrics.py",
               "RelativeDocumentMoniker": "Utils\\Metrics.py",
-              "ToolTip": "D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\Utils\\Metrics.py*",
-              "RelativeToolTip": "Utils\\Metrics.py*",
+              "ToolTip": "D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\Utils\\Metrics.py",
+              "RelativeToolTip": "Utils\\Metrics.py",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
               "WhenOpened": "2025-12-18T21:36:50.973Z",
@@ -161,13 +161,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Run_All.py",
               "DocumentMoniker": "D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\Experiments\\Run_All.py",
               "RelativeDocumentMoniker": "Experiments\\Run_All.py",
-              "ToolTip": "D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\Experiments\\Run_All.py",
-              "RelativeToolTip": "Experiments\\Run_All.py",
-              "ViewState": "AgIAADkAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "ToolTip": "D:\\My_Projects\\AI_Project\\8-Puzzle-AI\\Experiments\\Run_All.py*",
+              "RelativeToolTip": "Experiments\\Run_All.py*",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAAAHMAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
               "WhenOpened": "2025-12-18T21:19:34.915Z",
               "EditorCaption": ""
