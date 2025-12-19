@@ -4,21 +4,11 @@ from Puzzle import State
 from Utils import Metrics
 
 
-def _normalize_initial_state(initial_board_or_state):
-    """Return a reusable State instance starting at depth/cost = 0."""
-    if isinstance(initial_board_or_state, State.State):
-        board = list(initial_board_or_state.board)
-    else:
-        board = list(initial_board_or_state)
-
-    return State.State(board=board, depth=0, cost=0)
-
-
 def solve(initial_board, verbose=False):
     """Uniform-Cost Search (UCS) expands the cheapest frontier node first."""
 
     metrics = Metrics.Metrics()
-    start_state = _normalize_initial_state(initial_board)
+    start_state = Puzzle._normalize_initial_state(initial_board)
 
     frontier = []
     tie_breaker = 0
@@ -69,3 +59,4 @@ def solve(initial_board, verbose=False):
 
     metrics.stop()
     return {"solution": None, "metrics": metrics}
+
