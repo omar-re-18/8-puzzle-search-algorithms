@@ -3,22 +3,11 @@ from Puzzle import Puzzle
 from Puzzle import State
 from Utils import Metrics
 
-
-def _normalize_initial_state(initial_board_or_state): 
-    """Always return a fresh State instance starting from depth/cost = 0."""
-    if isinstance(initial_board_or_state, State.State):
-        board = list(initial_board_or_state.board)
-    else:
-        board = list(initial_board_or_state)
-
-    return State.State(board=board, depth=0, cost=0)
-
-
 def solve(initial_board, verbose=False):
     """Breadth-First Search (BFS) solver for the 8-puzzle."""
 
     metrics = Metrics.Metrics()
-    initial_state = _normalize_initial_state(initial_board)
+    initial_state = Puzzle._normalize_initial_state(initial_board)
 
     queue = collections.deque([initial_state])
     visited = {tuple(initial_state.board)}
