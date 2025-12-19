@@ -14,7 +14,7 @@ def _normalize_initial_state(initial_board_or_state):
     return State.State(board=board, depth=0, cost=0)
 
 
-def solve(initial_board, verbose=True):
+def solve(initial_board, verbose=False):
     """Breadth-First Search (BFS) solver for the 8-puzzle."""
 
     metrics = Metrics.Metrics()

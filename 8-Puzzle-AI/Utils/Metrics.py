@@ -13,7 +13,7 @@ class Metrics:
         - nodes_expanded: عدد العقد اللي تم توسيعها أثناء البحث
         - time_taken: الزمن الكلي للتنفيذ (يتحسب في الآخر)
         """
-        self.start_time = time.time()   # وقت بداية الخوارزمية
+        self.start_time = time.perf_counter()   # وقت بداية الخوارزمية
         self.nodes_expanded = 0         # عدد العقد المتوسعة
         self.time_taken = 0             # الزمن الكلي للتنفيذ
 
@@ -22,7 +22,7 @@ class Metrics:
         يتم استدعاء هذه الدالة بعد انتهاء الخوارزمية
         لحساب الزمن الكلي للتنفيذ
         """
-        self.time_taken = (time.time() - self.start_time) * 1000
+        self.time_taken = (time.perf_counter() - self.start_time) * 1000
 
 
         # مثال للاستخدام:
